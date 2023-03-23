@@ -107,6 +107,10 @@ class Cuenta {
     }
     
     
-    
+    // Actualizar saldos al liquidar cdt
+    public void actualizarSaldos(){
+        this.ahorro.consignar(this.cdt.getValorLiquidacion());
+    }
+            
     
 }
